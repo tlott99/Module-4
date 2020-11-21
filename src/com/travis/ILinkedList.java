@@ -7,5 +7,5 @@ public interface ILinkedList<T> {
     INode<T> findNode(int id);
     void removeNode(int id);
     void insertAfter(T data, int id1, int id2);
-    INode<T> reverseLinkedList();
+    void reverseLinkedList();
 }

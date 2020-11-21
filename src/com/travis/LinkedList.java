@@ -79,18 +79,16 @@ public class LinkedList<T> implements ILinkedList<T>{
     }
 
     @Override
-    /*public INode<T> reverseLinkedList() {
+    public void reverseLinkedList() {
         INode<T> previousNode = null;
         INode<T> currentNode = head;
         INode<T> nextNode = null;
-        while(currentNode != null);{
+        while(currentNode != null){
           nextNode = currentNode.getNext();
           currentNode.setNext(previousNode);
           previousNode = currentNode;
           currentNode = nextNode;
         }
-        INode<T> node = null;
-        node = previousNode;
-        return node;
-    }*/
+        head = previousNode;
+    }
 }
